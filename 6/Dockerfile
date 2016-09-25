@@ -1,7 +1,7 @@
 FROM       centos:6
 MAINTAINER lnterface "https://github.com/lnterface/centos-ssh"
 
-RUN yum update && \
+RUN yum update -y && \
     yum install -y openssh-server && \
     yum clean all
     
